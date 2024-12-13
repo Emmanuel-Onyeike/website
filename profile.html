@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Sky Blue Page</title>
+  <link rel="stylesheet" href="/css/profile.css">  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+ 
+    <section class="section-1">
+        <div class="profile-container">
+            <label for="profile-upload" class="profile-icon">
+              <img id="profile-image" src="default-profile.png" alt="Profile Image">
+            </label>
+            <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+            
+            <div class="username-container">
+              <span id="username">John Doe</span> <!-- Placeholder username -->
+              <i class="fas fa-check-circle blue-verification"></i> <!-- Blue verification icon -->
+            </div>
+          
+            <!-- Stats under the username -->
+            <div class="stats-container">
+                <div class="stat-item">
+                  <i class="fas fa-users"></i> <!-- Icon for followers -->
+                  <span>200 Followers</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-user-friends"></i> <!-- Icon for following -->
+                  <span>180 Following</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-heart"></i> <!-- Icon for likes -->
+                  <span>500 Likes</span>
+                </div>
+              </div>
+              
+          </div>
+          
+          <div class="button-container">
+            <button id="follow-btn" class="follow-btn">
+              <i id="follow-icon" class="fas fa-plus"></i> Follow
+            </button>
+          </div>      
+      </section>
+ <script src="/script/profile.js"></script>
+</body>
+</html>

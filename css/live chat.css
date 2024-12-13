@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body{
+	background: #EEEEEE;
+	font-family: 'Roboto', sans-serif;
+}
+.card{
+	width: 300px;
+	border: none;
+	border-radius: 15px;
+}
+.adiv{
+	background: #04CB28;
+	border-radius: 15px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	font-size: 12px;
+	height: 46px;
+}
+.chat{
+	border: none;
+	background: #E2FFE8;
+	font-size: 10px;
+	border-radius: 20px;
+}
+.bg-white{
+	border: 1px solid #E7E7E9;
+	font-size: 10px;
+	border-radius: 20px;
+}
+.myvideo img{
+	border-radius: 20px
+}
+.dot{
+	font-weight: bold;
+}
+.form-control{
+	border-radius: 12px;
+	border: 1px solid #F0F0F0;
+	font-size: 8px;
+}
+.form-control:focus{
+	box-shadow: none;
+	}
+.form-control::placeholder{
+	font-size: 8px;
+	color: #C4C4C4;
+}
+/* Styling the message button */
+.message-btn {
+    background-color: #34b7f1; /* WhatsApp-like blue */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 10px; /* Positioned to the right side inside the form group */
+    bottom: 10px; /* Positioned near the bottom of the textarea */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.message-btn:hover {
+    background-color: #128C7E; /* Darker shade when hovering */
+}
+
+.message-btn i {
+    font-size: 18px; /* Icon size */
+}
+
+/* Positioning the form-group container relative to position the button */
+.form-group {
+    position: relative;
+}
+
+/* Adjust the textarea to give space for the button */
+.form-control {
+    padding-right: 40px; /* Give space on the right side for the button */
+}
+/* Styling for each option button */
+.option-btn {
+    background-color: #34b7f1; /* WhatsApp-like blue */
+    border: none;
+    color: white;
+    padding: 6px 12px; /* Reduced padding for smaller buttons */
+    border-radius: 20px; /* More rounded button */
+    cursor: pointer;
+    font-size: 12px; /* Smaller font size */
+    margin-top: 6px; /* Reduced margin for tighter layout */
+    width: auto; /* Button width adjusts based on content */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth color and scale effect */
+    display: inline-block; /* Ensures it wraps tightly around the content */
+    box-sizing: border-box; /* Ensures padding doesn't affect button width */
+}
+
+/* Hover effect for buttons */
+.option-btn:hover {
+    background-color: #007bff; /* Darker shade of blue when hovering */
+    transform: scale(1.05); /* Slightly increases size for hover effect */
+}
+
+/* Active effect for button when clicked */
+.option-btn:active {
+    background-color: #0056b3; /* Even darker shade when clicked */
+    transform: scale(0.98); /* Slightly reduces size on click for a pressed effect */
+}
+
+/* Focus effect for accessibility */
+.option-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7); /* Adds a blue glow around button on focus */
+}
+
+/* Styling for the options container */
+.options {
+    margin-top: 15px; /* Adjusted to have small space between elements */
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Small gap between buttons for clarity */
+    align-items: center; /* Center buttons horizontally */
+}
+
+/* Adjusting image size and alignment */
+img {
+    border-radius: 50%;
+    width: 22px; /* Slightly smaller image */
+    height: 22px;
+    object-fit: cover;
+    margin-right: 8px; /* Small space between image and message */
+}
+
+/* Styling for the user message bubble */
+.chat {
+    background-color: #DCF8C6;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-size: 13px;
+    max-width: 75%;
+    word-wrap: break-word;
+    display: inline-block;
+    line-height: 1.4;
+    margin-bottom: 8px; /* Small gap between messages */
+}
+.solution-message {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* Email under the solution message */
+.email-message {
+    background-color: #e1f7e1;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-top: 8px;
+    color: #3c763d;
+}

@@ -1,0 +1,277 @@
+/* Apply the sky blue color as background for the entire page */
+body {
+    background-color: skyblue;
+    font-family: Arial, sans-serif;  /* Set a default font */
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Make sure the background covers the full viewport height */
+    display: flex;
+    flex-direction: column;  /* Stack the sections vertically */
+    align-items: center;  /* Center align the content */
+}
+  
+  header {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    color: #333;
+  }
+  
+  section {
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;  /* Prevent the section from getting too wide */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  /* Mobile responsive styles */
+  @media (max-width: 768px) {
+    section {
+      width: 90%;  /* Adjust section width for mobile */
+    }
+  
+    header h1 {
+      font-size: 1.8em;  /* Smaller heading on mobile */
+    }
+  
+    h2 {
+      font-size: 1.4em;  /* Smaller section headings on mobile */
+    }
+  
+    p {
+      font-size: 1em;  /* Adjust paragraph text for better readability */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5em;  /* Even smaller heading on very small screens */
+    }
+  
+    h2 {
+      font-size: 1.2em;  /* Adjust section heading size */
+    }
+  
+    p {
+      font-size: 0.9em;  /* Adjust paragraph text */
+    }
+  }
+  .section-1 {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-top: 10px; /* Add margin to push the profile section down */
+  }
+  
+  .profile-icon {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 10px;  /* Added margin-top to push the profile icon down */
+    cursor: pointer;
+    border: 5px solid skyblue; /* Border around the profile icon */
+  }
+  
+  .profile-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensure the image covers the entire circle */
+  }
+  
+  input[type="file"] {
+    display: none; /* Hide the file input */
+  }
+  .username-container {
+    display: flex;
+    align-items: center; /* Vertically center the username and verification icon */
+    margin-left: 15px; /* Space between the profile image and the username */
+    margin-bottom: 10px; /* Space between the username and stats */
+  }
+  
+  #username {
+    font-size: 24px;
+    font-weight: bold;
+    color: skyblue; /* Text color for the username */
+    margin-right: 15px; /* Space between the username and the icons */
+  }
+  .fas.fa-check-circle {
+    font-size: 22px; /* Size of the icon */
+    color: blue; /* Blue color for the verification icon */
+    font-weight: bold; /* Make the icon thicker */
+    margin-left: 5px; /* Space between the username and the icon */
+  }
+  /* Stats container to align items horizontally */
+.stats-container {
+    display: flex; /* Flex container to align the stats horizontally */
+    justify-content: flex-start; /* Align the stats to the left */
+    gap: 20px; /* Space between each stat item */
+    margin-top: 90px; /* Space between username and stats */
+    margin-right: 15px; /* Adjust space from the left */
+}
+
+/* Individual stat item */
+.stat-item {
+    display: flex;
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: center; /* Center the icon and text horizontally */
+    gap: 5px; /* Space between the icon and text */
+    text-align: center; 
+}
+
+/* Icon styling */
+.stat-item i {
+    font-size: 15px; /* Larger size of the icons for a cleaner look */
+    color: #1E90FF; /* Skyblue color for the icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Add smooth transition effects */
+}
+
+.stat-item i:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+    color: #00BFFF; /* Change color when hovered for an interactive effect */
+}
+
+.stat-item span {
+    font-size: 15px; /* Increase text size for readability */
+    color: #333; /* Darker text color for better contrast */
+    font-weight: 600; /* Slightly bold text for emphasis */
+    letter-spacing: 0.5px; /* Add a little letter spacing for better legibility */
+}
+  
+.stat-item:hover i {
+    color: #00BFFF; /* Change icon color when the stat item is hovered */
+    transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+.stat-item:hover span {
+    color: #1E90FF; /* Change text color when the stat item is hovered */
+}
+  input[type="file"] {
+    display: none; /* Hide the file input */
+  }
+  @media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;  /* Even smaller heading on very small screens */
+    }
+
+    h2 {
+        font-size: 1.2em;  /* Adjust section heading size */
+    }
+
+    p {
+        font-size: 0.9em;  /* Adjust paragraph text */
+    }
+
+    .profile-container {
+        margin-top: 10px; /* Reduce margin on very small screens */
+        flex-direction: column; /* Stack profile icon and username vertically */
+        align-items: center;
+    }
+
+    .profile-icon {
+        width: 50px; /* Even smaller profile icon */
+        height: 50px;
+    }
+
+    #username {
+        font-size: 20px; /* Smaller username size */
+    }
+
+    .fas.fa-check-circle {
+        font-size: 16px; /* Smaller icon size */
+    }
+
+    .stats-container {
+        flex-direction: column; /* Stack stats vertically */
+        margin-top: 20px; /* Adjust spacing */
+        align-items: center; /* Center-align the stats */
+        gap: 5px; /* Reduce gap between stats */
+    }
+
+    .stat-item i {
+        font-size: 20px; /* Smaller icon on very small screens */
+    }
+
+    .stat-item span {
+        font-size: 12px; /* Adjust text size */
+    }
+}
+
+/* Apply custom styles for larger screens */
+@media (min-width: 1024px) {
+    .stats-container {
+        gap: 40px; /* Larger gap between stats on larger screens */
+    }
+
+    .profile-container {
+        margin-top: 20px; /* Add margin on larger screens */
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align the button to the right */
+    margin-top: 20px; /* Space between the profile info and the button */
+    width: 100%; /* Make the button container full width */
+  }
+  
+  /* Follow button styling */
+  .follow-btn {
+    background-color: #1E90FF;  /* Blue background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;  /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .follow-btn:hover {
+    background-color: #00BFFF;  /* Lighter blue when hovered */
+  }
+  
+  .follow-btn i {
+    margin-right: 8px;  /* Space between the icon and text */
+  }
+  
+  .follow-btn.unfollow {
+    background-color: #FF6347;  /* Red background for unfollow */
+  }
+  
+  .follow-btn.unfollow i {
+    content: "\f21a";  /* Switch icon to minus when unfollowing */
+  }
